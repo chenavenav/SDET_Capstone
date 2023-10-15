@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<parameter name="Username" value="standard_user"></parameter>
+		<parameter name="Password" value="secret_sauce"></parameter>
+		<parameter name="InvalidUsername" value="standard_Invaliduser"></parameter>
+		<parameter name="InvalidPassword" value="secret_Invalidpwd"></parameter>
+		<classes>
+			<class name="com.qa.testscripts.saucedemo_SeleniumJava" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
